@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/can829/"/>
-  <updated>2017-07-14T02:17:59.021Z</updated>
+  <updated>2017-07-14T02:55:13.362Z</updated>
   <id>https://github.com/can829/</id>
   
   <author>
@@ -14,6 +14,29 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>photo</title>
+    <link href="https://github.com/can829/2017/07/14/photo/"/>
+    <id>https://github.com/can829/2017/07/14/photo/</id>
+    <published>2017-07-14T02:48:04.000Z</published>
+    <updated>2017-07-14T02:55:13.362Z</updated>
+    
+    <content type="html"><![CDATA[<p>你就说你想不想看里面是什么~<br><a id="more"></a><br>    没错，就是一张图片而已·哈哈哈哈<br>    <img src="/images/1.jpg" alt="“美不美”">   </p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;你就说你想不想看里面是什么~&lt;br&gt;
+    
+    </summary>
+    
+    
+      <category term="黑魔法" scheme="https://github.com/can829/tags/%E9%BB%91%E9%AD%94%E6%B3%95/"/>
+    
+      <category term="photo" scheme="https://github.com/can829/tags/photo/"/>
+    
+  </entry>
   
   <entry>
     <title>小可爱</title>
