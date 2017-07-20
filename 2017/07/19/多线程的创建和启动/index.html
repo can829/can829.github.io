@@ -8,14 +8,17 @@
   <link rel="dns-prefetch" href="https://github.com/can829">
   <title>多线程的创建和启动 | can</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="keywords" content="多线程,java">
+  <meta name="description" content="线程和进程的概念了解多线程，首先我们需要了解什么是线程和进程。进程：所有运行中的任务通常对应一个进程，一个进程里面最少有一个线程(主线程main)，线程：进程的执行单元。在进程内，创建多条顺序执行流，这些顺序执行流就是线程，每个线程也是相互独立的。    线程在程序中是独立的，并发的执行流。(并发性：指的是同一时刻只能有一条指令执行。    并行性：指的是同一时刻，有多条指令在多个处理器上同时执">
+<meta name="keywords" content="多线程,java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="多线程的创建和启动">
 <meta property="og:url" content="https://github.com/can829/2017/07/19/多线程的创建和启动/index.html">
 <meta property="og:site_name" content="can">
-<meta property="og:updated_time" content="2017-07-20T14:58:15.342Z">
+<meta property="og:description" content="线程和进程的概念了解多线程，首先我们需要了解什么是线程和进程。进程：所有运行中的任务通常对应一个进程，一个进程里面最少有一个线程(主线程main)，线程：进程的执行单元。在进程内，创建多条顺序执行流，这些顺序执行流就是线程，每个线程也是相互独立的。    线程在程序中是独立的，并发的执行流。(并发性：指的是同一时刻只能有一条指令执行。    并行性：指的是同一时刻，有多条指令在多个处理器上同时执">
+<meta property="og:updated_time" content="2017-07-20T15:12:44.753Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="多线程的创建和启动">
+<meta name="twitter:description" content="线程和进程的概念了解多线程，首先我们需要了解什么是线程和进程。进程：所有运行中的任务通常对应一个进程，一个进程里面最少有一个线程(主线程main)，线程：进程的执行单元。在进程内，创建多条顺序执行流，这些顺序执行流就是线程，每个线程也是相互独立的。    线程在程序中是独立的，并发的执行流。(并发性：指的是同一时刻只能有一条指令执行。    并行性：指的是同一时刻，有多条指令在多个处理器上同时执">
   
     <link rel="alternative" href="/atom.xml" title="can" type="application/atom+xml">
   
@@ -185,8 +188,10 @@
 <!-- 目录内容结束 -->
     <div class="article-entry" itemprop="articleBody">
       
-        <h2 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h2><h2 id="线程和进程的概念"><a href="#线程和进程的概念" class="headerlink" title="线程和进程的概念"></a>线程和进程的概念</h2><p>了解多线程，首先我们需要了解什么是线程和进程。<br>进程：所有运行中的任务通常对应一个进程，一个进程里面最少有一个线程(主线程main)，<br>线程：进程的执行单元。在进程内，创建多条顺序执行流，这些顺序执行流就是线程，每个线程也是相互独立的。<br>    线程在程序中是独立的，并发的执行流。(并发性：指的是同一时刻只能有一条指令执行。<br>    并行性：指的是同一时刻，有多条指令在多个处理器上同时执行)<br>个人理解：一个QQ的运行是一个进程的运行，然后你在刷空间的时候可以听到背景音乐，就是多个线程在执行。</p>
-<h2 id="—"><a href="#—" class="headerlink" title="—-"></a>—-</h2><h2 id="继承Thread类创建线程类，启动多线程："><a href="#继承Thread类创建线程类，启动多线程：" class="headerlink" title="继承Thread类创建线程类，启动多线程："></a>继承Thread类创建线程类，启动多线程：</h2><p>1.定义Thread类的子类，重写run()方法<br>2.创建Thread子类的实例，也就是创建线程对象<br>3.调用线程对象的start()方法启动线程—new FirstThread().start();</p>
+        <hr>
+<h2 id="线程和进程的概念"><a href="#线程和进程的概念" class="headerlink" title="线程和进程的概念"></a>线程和进程的概念</h2><p>了解多线程，首先我们需要了解什么是线程和进程。<br>进程：所有运行中的任务通常对应一个进程，一个进程里面最少有一个线程(主线程main)，<br>线程：进程的执行单元。在进程内，创建多条顺序执行流，这些顺序执行流就是线程，每个线程也是相互独立的。<br>    线程在程序中是独立的，并发的执行流。(并发性：指的是同一时刻只能有一条指令执行。<br>    并行性：指的是同一时刻，有多条指令在多个处理器上同时执行)<br>个人理解：一个QQ的运行是一个进程的运行，然后你在刷空间的时候可以听到背景音乐，就是多个线程在执行。</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h2><hr>
+<h2 id="继承Thread类创建线程类，启动多线程："><a href="#继承Thread类创建线程类，启动多线程：" class="headerlink" title="继承Thread类创建线程类，启动多线程："></a>继承Thread类创建线程类，启动多线程：</h2><p>1.定义Thread类的子类，重写run()方法<br>2.创建Thread子类的实例，也就是创建线程对象<br>3.调用线程对象的start()方法启动线程—new FirstThread().start();</p>
 <p>tips:<br>①当线程继承Thread类时，直接用this可获得当前线程<br>②调用Thread的cuurentThread()方法获取当前线程<br>—-&gt;java默认的主线程，main()方法的方法体就是主线程的线程执行体</p>
 <pre><code>public class firstThread extends Thread{
     private int i;
@@ -264,7 +269,8 @@ FutureTask&lt;Integer&gt; task = new FutureTask&lt;integer&gt;((Callable&lt;inte
     }
 }    
 }
-</code></pre><h2 id="—-1"><a href="#—-1" class="headerlink" title="—-"></a>—-</h2>
+</code></pre><hr>
+<h2 id="个人见解，仅供参考，如有错误，欢迎指正-戳进去-gt"><a href="#个人见解，仅供参考，如有错误，欢迎指正-戳进去-gt" class="headerlink" title=" 个人见解，仅供参考，如有错误，欢迎指正(戳进去-&gt;)"></a> <a href="2740327254@qq.com">个人见解，仅供参考，如有错误，欢迎指正(戳进去-&gt;)</a></h2>
       
 
       
@@ -564,10 +570,6 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           <ul class="article-tag-list" q-show="showTags">
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color5">html</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">多线程</a>
               </li>
              
@@ -585,6 +587,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
              
               <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color5">奇淫技巧</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">html</a>
               </li>
             
             <div class="clearfix"></div>

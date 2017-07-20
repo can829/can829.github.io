@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://github.com/can829/"/>
-  <updated>2017-07-20T14:58:15.342Z</updated>
+  <updated>2017-07-20T15:12:44.753Z</updated>
   <id>https://github.com/can829/</id>
   
   <author>
@@ -20,10 +20,12 @@
     <link href="https://github.com/can829/2017/07/19/%E5%A4%9A%E7%BA%BF%E7%A8%8B%E7%9A%84%E5%88%9B%E5%BB%BA%E5%92%8C%E5%90%AF%E5%8A%A8/"/>
     <id>https://github.com/can829/2017/07/19/多线程的创建和启动/</id>
     <published>2017-07-19T13:26:58.000Z</published>
-    <updated>2017-07-20T14:58:15.342Z</updated>
+    <updated>2017-07-20T15:12:44.753Z</updated>
     
-    <content type="html"><![CDATA[<h2 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h2><h2 id="线程和进程的概念"><a href="#线程和进程的概念" class="headerlink" title="线程和进程的概念"></a>线程和进程的概念</h2><p>了解多线程，首先我们需要了解什么是线程和进程。<br>进程：所有运行中的任务通常对应一个进程，一个进程里面最少有一个线程(主线程main)，<br>线程：进程的执行单元。在进程内，创建多条顺序执行流，这些顺序执行流就是线程，每个线程也是相互独立的。<br>    线程在程序中是独立的，并发的执行流。(并发性：指的是同一时刻只能有一条指令执行。<br>    并行性：指的是同一时刻，有多条指令在多个处理器上同时执行)<br>个人理解：一个QQ的运行是一个进程的运行，然后你在刷空间的时候可以听到背景音乐，就是多个线程在执行。</p>
-<h2 id="—"><a href="#—" class="headerlink" title="—-"></a>—-</h2><h2 id="继承Thread类创建线程类，启动多线程："><a href="#继承Thread类创建线程类，启动多线程：" class="headerlink" title="继承Thread类创建线程类，启动多线程："></a>继承Thread类创建线程类，启动多线程：</h2><p>1.定义Thread类的子类，重写run()方法<br>2.创建Thread子类的实例，也就是创建线程对象<br>3.调用线程对象的start()方法启动线程—new FirstThread().start();</p>
+    <content type="html"><![CDATA[<hr>
+<h2 id="线程和进程的概念"><a href="#线程和进程的概念" class="headerlink" title="线程和进程的概念"></a>线程和进程的概念</h2><p>了解多线程，首先我们需要了解什么是线程和进程。<br>进程：所有运行中的任务通常对应一个进程，一个进程里面最少有一个线程(主线程main)，<br>线程：进程的执行单元。在进程内，创建多条顺序执行流，这些顺序执行流就是线程，每个线程也是相互独立的。<br>    线程在程序中是独立的，并发的执行流。(并发性：指的是同一时刻只能有一条指令执行。<br>    并行性：指的是同一时刻，有多条指令在多个处理器上同时执行)<br>个人理解：一个QQ的运行是一个进程的运行，然后你在刷空间的时候可以听到背景音乐，就是多个线程在执行。</p>
+<h2 id=""><a href="#" class="headerlink" title=""></a><a id="more"></a></h2><hr>
+<h2 id="继承Thread类创建线程类，启动多线程："><a href="#继承Thread类创建线程类，启动多线程：" class="headerlink" title="继承Thread类创建线程类，启动多线程："></a>继承Thread类创建线程类，启动多线程：</h2><p>1.定义Thread类的子类，重写run()方法<br>2.创建Thread子类的实例，也就是创建线程对象<br>3.调用线程对象的start()方法启动线程—new FirstThread().start();</p>
 <p>tips:<br>①当线程继承Thread类时，直接用this可获得当前线程<br>②调用Thread的cuurentThread()方法获取当前线程<br>—-&gt;java默认的主线程，main()方法的方法体就是主线程的线程执行体</p>
 <pre><code>public class firstThread extends Thread{
     private int i;
@@ -101,11 +103,14 @@ FutureTask&lt;Integer&gt; task = new FutureTask&lt;integer&gt;((Callable&lt;inte
     }
 }    
 }
-</code></pre><h2 id="—-1"><a href="#—-1" class="headerlink" title="—-"></a>—-</h2>]]></content>
+</code></pre><hr>
+<h2 id="个人见解，仅供参考，如有错误，欢迎指正-戳进去-gt"><a href="#个人见解，仅供参考，如有错误，欢迎指正-戳进去-gt" class="headerlink" title=" 个人见解，仅供参考，如有错误，欢迎指正(戳进去-&gt;)"></a> <a href="2740327254@qq.com">个人见解，仅供参考，如有错误，欢迎指正(戳进去-&gt;)</a></h2>]]></content>
     
     <summary type="html">
     
-      &lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;
+      &lt;hr&gt;
+&lt;h2 id=&quot;线程和进程的概念&quot;&gt;&lt;a href=&quot;#线程和进程的概念&quot; class=&quot;headerlink&quot; title=&quot;线程和进程的概念&quot;&gt;&lt;/a&gt;线程和进程的概念&lt;/h2&gt;&lt;p&gt;了解多线程，首先我们需要了解什么是线程和进程。&lt;br&gt;进程：所有运行中的任务通常对应一个进程，一个进程里面最少有一个线程(主线程main)，&lt;br&gt;线程：进程的执行单元。在进程内，创建多条顺序执行流，这些顺序执行流就是线程，每个线程也是相互独立的。&lt;br&gt;    线程在程序中是独立的，并发的执行流。(并发性：指的是同一时刻只能有一条指令执行。&lt;br&gt;    并行性：指的是同一时刻，有多条指令在多个处理器上同时执行)&lt;br&gt;个人理解：一个QQ的运行是一个进程的运行，然后你在刷空间的时候可以听到背景音乐，就是多个线程在执行。&lt;/p&gt;
+&lt;h2 id=&quot;&quot;&gt;&lt;a href=&quot;#&quot; class=&quot;headerlink&quot; title=&quot;&quot;&gt;&lt;/a&gt;
     
     </summary>
     
